@@ -1,0 +1,34 @@
+[project]
+name = "Moss_TTS-ComfyUI"
+description = "ComfyUI custom nodes for OpenMOSS MOSS-TTS Local Transformer v1.5 with model catalog downloads, Whisper prefix transcription, continuation, voice cloning, and AIMDO memory tracking"
+version = "0.1.1"
+license = {text = "Apache-2.0"}
+dependencies = [
+    "accelerate",
+    "huggingface-hub",
+    "numpy",
+    "safetensors",
+    "tqdm",
+]
+
+[project.urls]
+Repository = "https://github.com/Saganaki22/Moss_TTS-ComfyUI"
+MOSS-TTS = "https://github.com/OpenMOSS/MOSS-TTS"
+Model = "https://huggingface.co/OpenMOSS-Team/MOSS-TTS-Local-Transformer-v1.5"
+AudioTokenizer = "https://huggingface.co/OpenMOSS-Team/MOSS-Audio-Tokenizer-v2"
+
+[tool.comfy]
+PublisherId = "saganaki22"
+DisplayName = "MOSS-TTS"
+Icon = "https://avatars.githubusercontent.com/u/84208527"
+PreInstall = "install.py"
+
+[tool.moss-tts-comfyui]
+models-folder = "ComfyUI/models/mosstts"
+main-model-folder = "ComfyUI/models/mosstts/moss-tts-local-transformer-v1.5"
+audio-tokenizer-folder = "ComfyUI/models/mosstts/moss-audio-tokenizer-v2"
+main-assets-folder = "custom_nodes/Moss_TTS-ComfyUI/assets/moss-tts-local-transformer-v1.5"
+audio-tokenizer-assets-folder = "custom_nodes/Moss_TTS-ComfyUI/assets/moss-audio-tokenizer-v2"
+main-repo = "OpenMOSS-Team/MOSS-TTS-Local-Transformer-v1.5"
+audio-tokenizer-repo = "OpenMOSS-Team/MOSS-Audio-Tokenizer-v2"
+protected-runtime = ["torch", "torchaudio", "torchvision", "transformers"]

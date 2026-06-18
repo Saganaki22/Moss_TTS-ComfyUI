@@ -1,0 +1,21 @@
+{
+  "additional_special_tokens": [
+    "<|audio_start|>",
+    "<|audio_end|>",
+    "<|audio_pad|>"
+  ],
+  "eos_token": {
+    "content": "<|im_end|>",
+    "lstrip": false,
+    "normalized": false,
+    "rstrip": false,
+    "single_word": false
+  },
+  "pad_token": {
+    "content": "<|endoftext|>",
+    "lstrip": false,
+    "normalized": false,
+    "rstrip": false,
+    "single_word": false
+  }
+}

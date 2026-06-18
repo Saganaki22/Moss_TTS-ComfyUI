@@ -1,0 +1,13 @@
+# INFORMATION ONLY - ComfyUI manages torch, torchaudio, and transformers.
+#
+# install.py installs only missing lightweight dependencies and does not replace
+# the active ComfyUI Torch/CUDA stack.
+
+accelerate
+huggingface-hub
+numpy
+safetensors
+tqdm
+
+# Optional CUDA attention backend:
+# triton + flash-attention

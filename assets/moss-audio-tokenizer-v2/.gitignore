@@ -1,0 +1,3 @@
+dev/*
+demo/demo_rec*.wav
+__pycache__
