@@ -1,22 +1,54 @@
-# Moss_TTS-ComfyUI
+<p align="center">
+  <img
+    width="843"
+    height="83"
+    alt="openmoss_x_mosi"
+    src="https://github.com/user-attachments/assets/6d07b9b7-9cd9-476e-b569-67b920c56c12"
+  />
+</p>
 
-**English** | **[简体中文](./README_zh.md)**
+<h1 align="center">Moss_TTS-ComfyUI</h1>
 
-**Version: v0.1.1**
+<p align="center">
+  <strong>English</strong> |
+  <a href="./README_zh.md">简体中文</a>
+</p>
 
-[![Version](https://img.shields.io/badge/version-v0.1.1-blue)](https://github.com/Saganaki22/Moss_TTS-ComfyUI/releases/tag/v0.1.1)
-[![ComfyUI](https://img.shields.io/badge/ComfyUI-Custom_Node-2d7dd2)](https://github.com/comfyanonymous/ComfyUI)
-[![ComfyUI Manager](https://img.shields.io/badge/ComfyUI_Manager-compatible-6f42c1)](https://github.com/ltdrdata/ComfyUI-Manager)
-[![MOSS-TTS v1.5](https://img.shields.io/badge/Hugging_Face-MOSS--TTS--Local--Transformer--v1.5-ffd21e)](https://huggingface.co/OpenMOSS-Team/MOSS-TTS-Local-Transformer-v1.5)
-[![Audio Tokenizer](https://img.shields.io/badge/Hugging_Face-MOSS--Audio--Tokenizer--v2-ffd21e)](https://huggingface.co/OpenMOSS-Team/MOSS-Audio-Tokenizer-v2)
-[![Upstream](https://img.shields.io/badge/Upstream-OpenMOSS%2FMOSS--TTS-111111)](https://github.com/OpenMOSS/MOSS-TTS)
-[![License](https://img.shields.io/badge/License-Apache--2.0-green)](https://huggingface.co/OpenMOSS-Team/MOSS-TTS-Local-Transformer-v1.5)
+<p align="center">
+  <strong>Version: v0.1.1</strong>
+</p>
 
-ComfyUI nodes for [OpenMOSS-Team/MOSS-TTS-Local-Transformer-v1.5](https://huggingface.co/OpenMOSS-Team/MOSS-TTS-Local-Transformer-v1.5), a 48 kHz stereo local Transformer TTS model with direct generation, zero-shot voice cloning, continuation, duration control, pronunciation markup, multilingual synthesis, and code-switching.
+<p align="center">
+  <a href="https://github.com/Saganaki22/Moss_TTS-ComfyUI/releases/tag/v0.1.1">
+    <img src="https://img.shields.io/badge/version-v0.1.1-blue" alt="Version" />
+  </a>
+  <a href="https://github.com/comfyanonymous/ComfyUI">
+    <img src="https://img.shields.io/badge/ComfyUI-Custom_Node-2d7dd2" alt="ComfyUI" />
+  </a>
+  <a href="https://github.com/ltdrdata/ComfyUI-Manager">
+    <img src="https://img.shields.io/badge/ComfyUI_Manager-compatible-6f42c1" alt="ComfyUI Manager" />
+  </a>
+  <a href="https://huggingface.co/OpenMOSS-Team/MOSS-TTS-Local-Transformer-v1.5">
+    <img src="https://img.shields.io/badge/Hugging_Face-MOSS--TTS--Local--Transformer--v1.5-ffd21e" alt="MOSS-TTS v1.5" />
+  </a>
+  <a href="https://huggingface.co/OpenMOSS-Team/MOSS-Audio-Tokenizer-v2">
+    <img src="https://img.shields.io/badge/Hugging_Face-MOSS--Audio--Tokenizer-v2-ffd21e" alt="Audio Tokenizer" />
+  </a>
+  <a href="https://github.com/OpenMOSS/MOSS-TTS">
+    <img src="https://img.shields.io/badge/Upstream-OpenMOSS%2FMOSS--TTS-111111" alt="Upstream" />
+  </a>
+  <a href="https://huggingface.co/OpenMOSS-Team/MOSS-TTS-Local-Transformer-v1.5">
+    <img src="https://img.shields.io/badge/License-Apache--2.0-green" alt="License" />
+  </a>
+</p>
 
-This node pack keeps the small Hugging Face remote-code, tokenizer, and config assets inside the custom node folder. Large model files are stored under `ComfyUI/models/mosstts/`, and downloads only happen when `download_if_missing` is enabled.
-
-> Use voice cloning only with voices you own or have explicit permission to use. Do not use this project for impersonation, fraud, harassment, consent evasion, or other harmful use.
+<p align="center">
+  <img
+    width="900"
+    alt="Moss TTS-ComfyUI screenshot"
+    src="https://github.com/user-attachments/assets/eaf90d2d-19ec-4039-9b60-1834af5b7116"
+  />
+</p>
 
 ## Highlights
 
