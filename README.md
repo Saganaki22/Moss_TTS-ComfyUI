@@ -10,8 +10,7 @@
 <h1 align="center">Moss_TTS-ComfyUI</h1>
 
 <p align="center">
-  <strong>English</strong> |
-  <a href="./README_zh.md">简体中文</a>
+  <strong>English</strong> | <a href="./README_zh.md">简体中文</a>
 </p>
 
 <p align="center">
@@ -49,6 +48,28 @@
     src="https://github.com/user-attachments/assets/eaf90d2d-19ec-4039-9b60-1834af5b7116"
   />
 </p>
+
+<p align="center">
+  ComfyUI nodes for
+  <a href="https://huggingface.co/OpenMOSS-Team/MOSS-TTS-Local-Transformer-v1.5">
+    OpenMOSS-Team/MOSS-TTS-Local-Transformer-v1.5
+  </a>,
+  a 48 kHz stereo local Transformer TTS model with direct generation, zero-shot voice cloning,
+  continuation, duration control, pronunciation markup, multilingual synthesis, and code-switching.
+</p>
+
+<p align="center">
+  This node pack keeps the small Hugging Face remote-code, tokenizer, and config assets inside the
+  custom node folder. Large model files are stored under <code>ComfyUI/models/mosstts/</code>,
+  and downloads only happen when <code>download_if_missing</code> is enabled.
+</p>
+
+<p align="center">
+  <strong>⚠️ Safety note:</strong> Use voice cloning only with voices you own or have explicit
+  permission to use. Do not use this project for impersonation, fraud, harassment, consent evasion,
+  or other harmful use.
+</p>
+
 
 ## Highlights
 
