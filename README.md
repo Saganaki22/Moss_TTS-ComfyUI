@@ -30,9 +30,6 @@
   <a href="https://huggingface.co/OpenMOSS-Team/MOSS-TTS-Local-Transformer-v1.5">
     <img src="https://img.shields.io/badge/Hugging_Face-MOSS--TTS--Local--Transformer--v1.5-ffd21e" alt="MOSS-TTS v1.5" />
   </a>
-  <a href="https://huggingface.co/OpenMOSS-Team/MOSS-Audio-Tokenizer-v2">
-    <img src="https://img.shields.io/badge/Hugging_Face-MOSS--Audio--Tokenizer-v2-ffd21e" alt="Audio Tokenizer" />
-  </a>
   <a href="https://github.com/OpenMOSS/MOSS-TTS">
     <img src="https://img.shields.io/badge/Upstream-OpenMOSS%2FMOSS--TTS-111111" alt="Upstream" />
   </a>
