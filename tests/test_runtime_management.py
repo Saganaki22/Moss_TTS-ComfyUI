@@ -293,6 +293,42 @@ def test_audio_tokenizer_device_prefers_comfy_runtime_device():
     assert MossTTSLocalProcessor._get_audio_tokenizer_device(processor) == torch.device("cuda:0")
 
 
+def test_codec_autocast_prefers_comfy_runtime_device(monkeypatch):
+    package = _load_test_package()
+    native = importlib.import_module(f"{package.__name__}.native")
+    native.codec_classes()
+    from _mosstts_native_codec.modeling_moss_audio_tokenizer import MossAudioTokenizerModel
+
+    class FakeCodec:
+        compute_dtype = torch.bfloat16
+        _mosstts_runtime_device = torch.device("cuda:0")
+
+        def __init__(self):
+            self.weight = nn.Parameter(torch.zeros(1))
+
+        def parameters(self):
+            return iter([self.weight])
+
+    calls = []
+
+    class FakeAutocast:
+        def __init__(self, *, device_type, dtype):
+            calls.append((device_type, dtype))
+
+        def __enter__(self):
+            return None
+
+        def __exit__(self, exc_type, exc, tb):
+            return False
+
+    monkeypatch.setattr(torch, "autocast", FakeAutocast)
+
+    with MossAudioTokenizerModel._codec_inference_autocast(FakeCodec()):
+        pass
+
+    assert calls == [("cuda", torch.bfloat16)]
+
+
 def test_native_conversion_adds_comfy_cast_modules():
     package = _load_test_package()
     native = importlib.import_module(f"{package.__name__}.native")

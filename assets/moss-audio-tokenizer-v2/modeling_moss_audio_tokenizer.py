@@ -2025,7 +2025,10 @@ class MossAudioTokenizerModel(MossAudioTokenizerPreTrainedModel):
 
     @contextmanager
     def _codec_inference_autocast(self):
-        device = next(self.parameters()).device
+        device = getattr(self, "_mosstts_runtime_device", None)
+        if device is None:
+            device = next(self.parameters()).device
+        device = torch.device(device)
         if device.type == "cuda" and self.compute_dtype is not None:
             with torch.autocast(device_type="cuda", dtype=self.compute_dtype):
                 yield

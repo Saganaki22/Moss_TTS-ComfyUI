@@ -1,7 +1,7 @@
 [project]
 name = "Moss_TTS-ComfyUI"
 description = "ComfyUI custom nodes for OpenMOSS MOSS-TTS Local Transformer v1.5 with model catalog downloads, Whisper prefix transcription, continuation, voice cloning, and AIMDO memory tracking"
-version = "0.1.1"
+version = "0.1.2"
 license = {text = "Apache-2.0"}
 dependencies = [
     "accelerate",
